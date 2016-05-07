@@ -1,0 +1,30 @@
+﻿<Window x:Class="ConexionMySQL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConexionMySQL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="129" Margin="27,15,0,0" Stroke="Black" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="label" Content="Dni:" HorizontalAlignment="Left" Margin="39,28,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Nombre" HorizontalAlignment="Left" Margin="39,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Apellido" HorizontalAlignment="Left" Margin="39,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Número de pager:" HorizontalAlignment="Left" Margin="39,104,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tPager" HorizontalAlignment="Left" Height="23" Margin="162,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tApellido" HorizontalAlignment="Left" Height="23" Margin="162,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tNombre" HorizontalAlignment="Left" Height="23" Margin="162,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tDni" HorizontalAlignment="Left" Height="23" Margin="162,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="bAgregar" Content="Agregar Usuario" HorizontalAlignment="Left" Margin="306,107,0,0" VerticalAlignment="Top" Width="97" Click="bAgregar_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="56" Margin="27,149,0,0" Stroke="Black" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="label2" Content="Dni a buscar: " HorizontalAlignment="Left" Margin="39,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.094,0.086"/>
+        <TextBox x:Name="tDniBuscar" HorizontalAlignment="Left" Height="23" Margin="162,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="bBuscar" Content="Buscar Usuario" HorizontalAlignment="Left" Margin="306,168,0,0" VerticalAlignment="Top" Width="97" Click="bBuscar_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="56" Margin="27,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="392"/>
+        <Button x:Name="bContar" Content="Contar" HorizontalAlignment="Left" Margin="322,231,0,0" VerticalAlignment="Top" Width="74" Click="bContar_Click"/>
+        <Label x:Name="label3" Content="Este botón carga todos los usuarios en lista" HorizontalAlignment="Left" Margin="39,225,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
